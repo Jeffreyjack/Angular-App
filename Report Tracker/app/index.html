@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="reportTracker" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="reportTracker" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="reportTracker" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="reportTracker" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Field Service Report</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>   
+  <link rel="stylesheet" href="bower_components/lib/responsivemobilemenu.css">
+  <link rel="stylesheet" href="bower_components/lib/bootstrap-3.3.6/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/lib/bootstrap-3.3.6/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/lib/bootstrap-3.3.6/dist/css/bootstrap-theme.min.css">
+</head>
+
+<body>
+    <!-- Static navbar -->
+			<div class="nav navbar-default navbar navbar-fixed-top"
+				role="navigation" style="padding-top:10px;" bs-navbar>
+				<div class="navbar-header" id="nav-header">
+                    <a class="navbar-brand" href="#controller">Report Tracker</a>
+                </div>
+				<div id="navbar" class='rmm' data-menu-style="minimal">
+					<ul class="nav navbar-nav" bs-navbar>
+						<li ng-hide="false" data-match-route="login"><a
+							href="#/login" target="_self">Login</a></li>
+						<li ng-hide="false" data-match-route="dashboard"><a
+							href="#/dashboard">Dashboard</a></li>
+                        <li ng-hide="false" data-match-route="dashboard"><a
+							href="#/assignments">Assignments</a></li>
+                        <li ng-hide="false" data-match-route="bibleStudy"><a
+							href="#/bibleStudy">Bible Study</a></li>
+                        <li ng-hide="false" data-match-route="Return Visits"><a
+							href="#/returnVisits">Return Visits</a></li>
+                        <li ng-hide="false" data-match-route="others"><a
+							href="#/others">Others</a></li>
+					</ul>
+				</div>
+				<!-- 	/.navbar minimal-->
+			</div>
+			<!-- static navbar -->
+  <!--<ul class="menu">
+    <li><a href="#/login">login</a></li>
+    <li><a href="#/dashboard">dashboard</a></li>
+  </ul>-->
+    
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    
+  <div ng-view></div>
+  <script src="bower_components/lib/jquery/jquery-1.10.2.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/lib/bootstrap-3.3.6/dist/js/bootstrap.js"></script>
+  <script src="bower_components/lib/bootstrap-3.3.6/dist/js/bootstrap.min.js"   ></script>
+    
+      <!--For drop down in menu-->
+  <script src="bower_components/lib/responsivemobilemenu.js"></script>
+    
+        <!--For local storage-->
+  <script src="bower_components/lib/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    
+  <!-- required for app-->
+  <script src="app.js"></script>
+  <script src="login/login.js"></script>
+  <script src="Services/commonProperties.js"></script>
+  <script src="dashboard/dashboard.js"></script>
+  <script src="assignments/assignments.js"></script>
+  <script src="returnVisits/retrunVisits.js"></script>
+  <script src="bibleStudy/bibleStudy.js"></script>
+  <script src="others/others.js"></script>
+  
+    
+
+    
+</body>
+</html>

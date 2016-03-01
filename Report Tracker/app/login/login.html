@@ -1,0 +1,11 @@
+<div style="padding-left: 20px; padding-right: 20px">
+    <div class="container">
+        <form class="form-signin" role="form" method="post" name="loginForm">
+            <h5 class="page-header">Already have an account?</h5>
+            <input class="form-control" type="text" ng-model='user.name' name="name" placeholder='User Name' required autofocus name="userName">
+            <input class="form-control" type="password" ng-model='user.password' name="password"placeholder='Password' required autofocus name="password">
+            <button class="btn  btn-primary btn-block" type="submit" ng-click="login(user)">Log in</button>
+        </form>
+    </div>
+</div>
+

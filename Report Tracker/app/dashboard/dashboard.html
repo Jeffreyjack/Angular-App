@@ -1,0 +1,59 @@
+<div style="padding-left: 20px; padding-right: 20px">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+         <div class="row">
+        <div class="col-sm-4">          
+          <div class="panel panel-primary" ng-controller="dashboardController">
+            <div class="panel-heading">
+              <h3 class="panel-title" style="text-align:center">{{month}}</h3>
+            </div>
+            <div class="panel-body" style="padding:0px; border: none">
+                <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <th>&nbsp;&nbsp;&nbsp;&nbsp<img src="images/hours_icon.png" style="width:30px; height:30px"></th>
+                        <th><img src="images/tracts.png" style="width:25px; height:25px"></th>
+                        <th><img src="images/rv.png" style="width:25px; height:25px"></th>
+                        <th><img src="images/books.png" style="width:25px; height:25px"></th>
+                        <th><img src="images/bible_study.png" style="width:35px; height:35px"></th>
+                        <th>&nbsp;&nbsp;&nbsp;<img src="images/talk.png" style="width:30px; height:30px"></th>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>12</td>
+                        <td>12</td>
+                        <td>32</td>
+                        <td>3</td>
+                        <td>q3</td>
+                        <td>q3</td>                       
+
+                    </tr>
+                </table>     
+                </div>                
+            </div>
+              <div class="panel-heading">
+              <h3 class="panel-title">Today</h3>
+            </div>
+              <div class="panel-body" style="padding:0px; border: none">
+                <div class="table-responsive">
+                    <input style = "width:100%" placeholder="Search Here"  ng-model="searchText">
+                <table class="table">
+                    <tr ng-repeat="val in tableDemo | filter:searchText">
+                        <td><a href="dashboard.html">{{val}}</a></td>
+                        <td><a href="dashboard.html">{{val}}</a></td>
+                        <td><a href="dashboard.html">{{val}}</a></td>
+                        <td><a href="dashboard.html">{{val}}</a></td>
+                    </tr>
+                </table>     
+                </div>                
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+      </div>
+
+    </div>
+</div>
+
+
