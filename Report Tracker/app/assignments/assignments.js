@@ -7,8 +7,7 @@
         controller: 'assignmentsController'
       });
     }])
-    .controller('assignmentsController', ['$scope',function($scope) {
-        alert();
+    .controller('assignmentsController', ['$scope','CommonService', function($scope, CommonService) {
         var demo= 10;
         function getdemo() {
         return demo;
@@ -17,5 +16,8 @@
         $scope.login = function(user) {
             console.log(user);
         }
+        
+        $scope.tableDemo = CommonService.getAssignmentItems();
+        $scope.newAssignmentDate = new Date();
 }]);
 })();
